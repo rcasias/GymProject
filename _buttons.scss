@@ -1,0 +1,113 @@
+@mixin button($name, $main-color, $inverse-color) {
+
+  .btn-#{$name} {
+    color: $main-color;
+    border-color: $main-color;
+
+    &:hover {
+      background-color: $main-color;
+      color: $inverse-color;
+    }
+  }
+
+  .btn.btn-#{$name}--filled, .btn-#{$name}--filled {
+    color: $inverse-color;
+    border-color: $main-color;
+    background-color: $main-color;
+
+    &:hover {
+      background: none;
+      color: $main-color;
+    }
+  }
+}
+  
+.btn {
+  font-family: $font-family-main;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 0.9em;
+  padding:  5px 30px;
+  background: none;
+  border-width: 3px;
+  border-style: solid;
+}
+  
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn.btn-expanded, .btn-expanded {
+  padding: 12px 35px;
+}
+
+.btn.btn-even, .btn-even {
+  padding: 15px;
+}
+
+@include button('opposite', $accent-contrast, $accent-color);
+@include button('main', $secondary-color, $accent-contrast);
+@include button('accent', $accent-color, $accent-contrast);
+@include button('dark', $accent-secondary, $accent-contrast);
+@include button('grey', $secondary-font, $accent-color);
+  
+.btn-inverse {
+  color: $accent-contrast;
+  border-color: $accent-contrast;
+
+  &:hover {
+    background-color: $accent-contrast;
+    color: $accent-color;
+  }
+}
+
+.btn.btn-inverse--filled, .btn-inverse--filled {
+  color: $accent-color;
+  border-color: $accent-contrast;
+  background-color: $accent-contrast;
+
+  &:hover {
+    background: none;
+    color: $accent-contrast;
+  }
+}
+.btn-color-opposite {
+  color: $accent-contrast;
+  border-color: $accent-contrast;
+
+  &:hover {
+    background-color: $accent-color;
+    color: $accent-contrast;
+    border-color: $accent-color;
+  }
+}
+.btn-primary-accent {
+  color: $primary-font;
+  border-color: $secondary-font;
+
+  &:hover {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+.btn-color-opposite-contrast {
+  color: $accent-contrast;
+  border-color: $accent-contrast;
+
+  &:hover {
+    background-color: $accent-contrast;
+    color: $accent-color;
+    border-color: $accent-contrast;
+  }
+}
+.btn-color-flip {
+  color: $primary-color;
+  border-color: $primary-color;
+
+  &:hover {
+    background-color: $accent-contrast;
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+

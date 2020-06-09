@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap');
+
+
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+$accent-color: var(--accent-color);
+$accent-secondary: var(--accent-secondary);
+$accent-contrast: var(--accent-contrast);
+$font-family-mono: var(--font-family-mono);
+$font-family-main: var(--font-family-main);
+$primary-font: var(--primary-font);
+$secondary-font: var(--secondary-font);
+
+:root {
+--secondary-color: #262626;
+--primary-color: #f2f2f2;
+--primary-font: #8c8c8c;
+--secondary-font: lightgrey;
+--accent-color: #ee2034;
+--accent-secondary: #000;
+--accent-contrast: #fff;
+--font-family-mono: monospace;
+--font-family-main: Arial, Helvetica, sans-serif;
+}

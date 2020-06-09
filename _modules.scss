@@ -1,0 +1,396 @@
+//misc
+.m-disp-grid__border-solid{
+    border: 1px solid black;
+}
+
+// icons
+.h-icon-large{
+    line-height: 125px;
+    margin: auto;
+    display: flex;
+}
+.m-social-icon{
+    cursor: pointer;
+}
+.m-social-icon:hover{
+    color: $accent-color;
+}
+
+//Tests
+.test{
+    margin-top: -425px;
+    height: 350px;
+    background: grey;
+    margin-bottom: 150px;
+}
+.test2{
+    margin-top: -125px;
+    font-size: 30px;
+    text-transform: uppercase;
+    background: white;
+    z-index: 3;
+    transform: rotate(270deg);
+    text-align: center;
+    padding-top: 10px;
+    padding: 10px;
+    margin-bottom: 200px;
+}
+.test3{
+    background: $primary-font;
+    height: 10vh;
+    margin-left: -100px;
+}
+.test4{
+    background: $accent-contrast;
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    margin-top: -350px;
+    text-align: center;
+}
+.test4__2{
+    border: 2px solid blue;
+    z-index: 4;
+}
+
+// Backgrounds
+.text-background{
+    z-index: 0;
+    font-size: 300px;
+    color: lightgrey;
+    text-transform: uppercase;
+    font-weight: bolder;
+    line-height: normal;
+    text-align: center;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+}
+.background-ph{
+    background: grey; 
+    width: 100%;
+}
+.background__nav-top{
+    background: $accent-secondary;
+    color: $accent-contrast;
+}
+.background__nav-bottom{
+    background-color: $accent-contrast;
+    color: $accent-secondary;
+
+    a{
+        color: $primary-font !important;
+        text-decoration: none;
+    }
+}
+.m-background__splash{
+    background: linear-gradient(1deg, $secondary-color 30%, #595959 98%);
+}
+.m-background__box-grid{
+    background: linear-gradient(1deg, $accent-contrast 30%, #595959 98%);
+}
+.m-background-accent__splash-box{
+    background: $accent-color;
+    margin-top: -100px;
+    margin-bottom: 75px;
+}
+.m-background-accent{
+    background: $accent-color;
+}
+.m-background__accentx10{
+    background: darken(#ee2034, 10%);
+}
+.m-background__accentx20{
+    background: darken(#ee2034, 20%);
+}
+.m-background__accentx30{
+    background: darken(#ee2034, 30%);
+}
+
+.m-background-primary{
+    background: $primary-color;
+}
+.background__accent-contrast{
+    background: $accent-contrast;
+}
+
+//fonts
+.m-header{
+    margin-top: 50px;
+}
+.m-header__text{
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.m-header__subtext{
+    text-transform: uppercase;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.m-font-title__xl{
+    font-size: 5em;
+    font-weight: bolder;
+    font-style: italic;
+    line-height: 70px;
+}
+.m-font-title__lg{
+    font-size: 3em;
+    font-weight: normal;
+}
+.m-font-title__reg{
+    text-transform: uppercase;
+    line-height: 70px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.m-font-title__{
+    font-size: 1.5em;
+    font-weight: lighter;
+    line-height: 60px;
+}
+.m-font-subtext{
+    text-transform: uppercase;
+    line-height: 40px;
+    font-weight: bolder;
+    margin: 0px;
+    font-size: .9em;
+}
+.m-font-subtext__{
+    text-transform: uppercase;
+    line-height: 60px;
+    margin: 0px;
+    font-size: .9em;
+}
+.m-font-main-text{
+    font-size: .9em;
+}
+
+// font colors
+.m-font__accent-contrast{
+    color: $accent-contrast;
+}
+.m-font__primary{
+    color: $primary-color;
+}
+.m-font__primary-font{
+    color: $primary-font;
+}
+.m-font__accent{
+    color: $accent-color;
+}
+.m-font__accentx20{
+    color: darken(#ee2034, 20%) !important;
+}
+
+//Spacing
+.vh-50{
+    height: 50vh;
+}
+.vh-30{
+    height: 30vh;
+}
+.vh-20{
+    height: 20vh;
+}
+.vh-10{
+    height: 10vh;
+}
+.vh-75{
+    height: 75vh
+}
+.m-section-margin__reg{
+    margin-bottom: 100px;
+}
+.m-section-padding__reg{
+    padding-bottom: 100px;
+}
+.h-about-us__padding{
+    padding: 0px 90px 0px 20px;
+}
+.h-box-padding{
+    padding: 40px;
+    margin: 0px;
+}
+.h-box-padding-1x4{
+    padding: 100px 40px 30px 40px;
+}
+
+.h-service-section_grid{
+    padding: 20px;
+}
+
+//Locations
+.vertical-middle{
+    margin: auto;
+}
+.vertical-bottom{
+    margin-top: auto;
+}
+.text-align-center{
+    text-align: center;
+}
+
+
+// Preview Boxes
+.preview-box, .preview-box--horizontal{
+    box-shadow: 0px 2px 4px #ccc;
+    background: $accent-contrast;
+    padding: 0px;
+}
+.preview-box--horizontal{
+    display: flex;
+}
+.preview-box__img{
+    display: block;
+    width: 100%;
+}
+.preview-box__img--horizontal{
+    display: block;
+    min-height: 100%;
+    max-width: 50%;
+}
+.preview-box__wrapper{
+    padding: 10px 30px 30px 30px;
+}
+.preview-box__title{
+    font-family: $font-family-main;
+    color: $secondary-color;
+    font-size: 1em;
+    line-height: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.preview-box__subtitile{
+    font-family: $font-family-main;
+    color: $secondary-color;
+    font-size: 1em;
+    line-height: 2em;
+}
+.preview-box__summary{
+    font-family: $font-family-main;
+    font-size: 1em;
+    line-height: 1.2em;
+    color: $primary-font;
+}
+.preview-box__button{
+    font-family: $font-family-main;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    padding: 5px 25px;
+    background: none;
+    color: $primary-font;
+    border: 3px solid $secondary-font;
+}
+
+.preview-box:hover, .preview-box--horizontal:hover {
+    background-color: $accent-color;
+}
+
+.preview-box:hover .preview-box__title, .preview-box:hover .preview-box__summary, .preview-box:hover .preview-box__button,
+.preview-box--horizontal:hover .preview-box__title, .preview-box--horizontal:hover .preview-box__summary, .preview-box--horizontal:hover .preview-box__button {
+    color: $accent-contrast;
+}
+
+.preview-box:hover .preview-box__button, .preview-box--horizontal:hover .preview-box__button {
+    border-color: $accent-contrast;
+}
+
+.preview-box:hover .preview-box__button:hover, .preview-box--horizontal:hover .preview-box__button:hover {
+    background: $accent-contrast;
+    color: $accent-color;
+}
+
+// info-boxes
+.info-box__icon-header{
+    width: 100%;
+    display: flex;
+    background: $accent-contrast;
+}
+.info-box__icon--cut{
+    border: 15px solid $primary-color;
+    border-radius: 10%;
+    margin: auto;
+    padding: 25px;
+    background: $accent-contrast;
+    margin-top: -25%;
+}
+.info-box__wrapper{
+    padding: 10px 30px 30px 30px;
+}
+.info-box__title{
+    font-family: $font-family-main;
+    color: $secondary-color;
+    font-size: 1em;
+    line-height: 2em;
+    text-transform: uppercase;
+}
+.info-box__subtitile{
+    font-family: $font-family-main;
+    color: $secondary-color;
+    font-size: 1em;
+    line-height: 2em;
+}
+.info-box__summary{
+    font-family: $font-family-main;
+    font-size: 1em;
+    line-height: 1.2em;
+    color: $primary-font;
+}
+
+//text-box
+.text-box-border-curve__right{
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+.text-box-border-curve__left{
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+.skew-normal{
+    transform: skew(17deg) rotate(2deg)
+}
+.skew-right{
+    transform: skew(-17deg) rotate(-2deg);
+}
+
+// Before Text
+.before-text:before {
+    content: var(--before-text);
+    position: absolute;
+    text-align: center;
+    font-family: $font-family-main;
+    font-size: 300px;
+    color: $secondary-font;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+//contact boxes
+.contact-box{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.contact-box__link{
+    padding: 50px 100px 0px 15px;
+}
+.contact-box__link:hover{
+    color: $accent-color;
+}
+.contact-box-interaction{
+    color: $primary-font !important;
+    cursor: pointer;
+}
+.contact-box-item{
+    font-size: .9em;
+    line-height: 30px;
+}
+.contact-box-item__title{
+    font-size: 1em;
+    color: $primary-font;
+    font-weight: bold;
+    line-height: 50px;
+}
+
